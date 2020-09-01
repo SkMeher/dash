@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/dropdown.css">
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+
+    <div class="total_wraper">
+        <header>
+            <div class="navcover">
+                <nav>
+                    <i class=" logo fab fa-apper"></i>
+                    <a href="#" class="active"><i class="fas fa-home"></i> Home</a>
+                    <a href="#"> Features</a>
+                    <a href="#"> Priching</a>
+                    <a href="#">About</a>
+                </nav>
+                <div class="userlogo">
+                    <i class="far fa-envelope"></i>
+                    <img src="download.jfif" alt="">
+                    <div class="text">
+                        <div class="dropdown">
+                            <button onclick="Function()" class="dropbtn">User Name</button>
+                            <div id="myDropdown" class="dropdown-content">
+                                <a href="#">Edit Profile</a>
+                                <a href="#">Add another account</a>
+                                <a href="#">LogOut</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <aside>
+
+
+            <span>General</span>
+            <a class="active" herf="#"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+
+            <span>Administration</span>
+            <a href="#"><i class="fab fa-wpforms"></i> Forms </a>
+            <a href="#"><i class="fab fa-uikit"></i> UI Elements </a>
+            <a href="#"><i class="fas fa-table"></i> Tables </a>
+            <a href="#"><i class="fas fa-chart-line"></i> Presentations </a>
+            <a href="#" onclick="myFunction()" class="abc"><i class="fas fa-cog"></i> Settings</a>
+                <div id="asideDropdown" class="submenu">
+                    <a href="#"> Members</a>
+                    <a href="#"> Plugins</a>
+                    <a href="#">Add a member</a>
+                </div>
+           
+
+            <span>Live On</span>
+
+            <a href="#"><i class="fas fa-bug"></i> Aditional Pages </a>
+            <a href="#"><i class="far fa-window-restore"></i> Extras </a>
+            <a href="#"><i class="fas fa-laptop"></i> Landing Pages </a>
+
+        </aside>
+
+        <div class="content">
+            <span class="title"> Home /Dashboard </span>
+            <span id="position"><i class="fas fa-tachometer-alt"></i> Dashboard</span>
+            <div class="body_area">
+
+                <div class="col1 ">
+                    <div class="boxc1 animate__zoomIn">
+                        Top Sale Total
+                        <h2>56,950</h2>
+                        sales overall sales %
+                        <h3>250K 750K 25%</h3>
+                    </div>
+
+                    <div class="boxc1">
+                        revenue / expenses
+                        <h2>55% / 45%</h2>
+                        rev proD srev s exp %
+                        <h3>30% 25% 45%</h3>
+
+                    </div>
+                    <div class="boxc1">
+                        FeedBack activity
+                        <h2>78% <i class="fas fa-long-arrow-alt-up"></i> </h2>
+                        Pos &nbsp; neg &nbsp;&nbsp; pos/neg %
+                        <h3>250K 130 90%/10%</h3>
+                    </div>
+                    <div class="boxc1">
+                        orders / returns
+                        <h2>75% / 25%</h2>
+                        orders returns success%
+                        <h3>425K 106K &nbsp; +28.5%</h3>
+                    </div>
+                </div>
+
+
+                <div class="col1">
+                    <div class="r2c1">
+                        <h3 class="chart wow animate__animated animate__flip"> COVID-19 in Bangladesh (Overall) </h3>
+                        <div id="donutchart"></div>
+                    </div>
+                    <div class="r2c1">
+                        <h3 class="chart wow animate__animated animate__rotateInDownLeft"> COVID-19 world wide confirmed
+                            Cases </h3>
+                        <div id="regions_div"></div>
+                    </div>
+                </div>
+
+
+                <div class="col1">
+                    <div class="r2c1">
+                        <h3 class="chart wow animate__animated animate__zoomIn"> COVID-19 in world wide (monthly) </h3>
+                        <div id="chart_div"></div>
+                    </div>
+                    <div class="r2c1">
+                        <h3 class="chart wow animate__animated animate__zoomInDown"> COVID-19 in Bangladesh (Deth
+                            /recovery) </h3>
+                        <div id="curve_chart"></div>
+                    </div>
+                </div>
+
+
+                <footer>
+                    <p class="wow animate__animated animate__fadeIn">
+                        <i class="fa fa-copyright" aria-hidden="true"></i> Copyright: <br>
+                        Meher Kanti Sarkar <br>
+                        Batch 2 <br>
+                        <i class="fa fa-envelope" aria-hidden="true"> </i> sarkarmeher1999@gmail.com <br>
+                        <i class="fa fa-phone" aria-hidden="true"> </i> 01777955540 <br>
+                        <i class="fa fa-whatsapp" aria-hidden="true"> </i> 01777955540
+                    </p>
+                </footer>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://kit.fontawesome.com/e4ca59fe19.js" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <script type="text/javascript" src="js/piechart.js"></script>
+
+    <script type="text/javascript" src="js/GeoCharts.js"></script>
+
+    <script type="text/javascript" src="js/boxchart.js"></script>
+
+    <script type="text/javascript" src="js/line.js"></script>
+
+    <script src="js/wow.min.js"></script>
+
+    <script>
+        new WOW().init();
+    </script>
+
+    <script src="js/dropdown.js" type="text/javascript"></script>
+    <script src="js/aside.js" type="text/javascript"></script>
+</body>
+
+</html>

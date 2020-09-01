@@ -1,0 +1,24 @@
+
+.navcover{
+    position: relative;
+}
+#login{
+    display: block;
+    text-decoration: none;
+    width: 100px;
+    text-align: center;
+    color: white;
+}
+
+/* -------------popup*
+
+.popupwindow{
+    height: 400px;
+    width: 400px;
+    text-align: center;
+    position: relative;
+    padding: 40px;
+    border-radius: 4px;
+    user-select:none;
+
+}
